@@ -330,4 +330,5 @@ ASALocalRun/
 .mfractor/
 
 # Build folder
-build
+.build/**/*
+!.build/.keep
