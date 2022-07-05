@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "*.yaml": "helm",
+    "*.tcc": "cpp",
+    "string_view": "cpp"
+  }
+}

@@ -1,0 +1,38 @@
+cmake_minimum_required(VERSION 3.10)
+
+project(CMakeProjectStructure)
+
+set(CMAKE_MINIMUM_REQUIRED_VERSION 3.10)
+
+set(CMAKE_CXX_STANDARD 17)
+
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY
+	${CMAKE_BINARY_DIR}/bin)
+
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY
+	${CMAKE_BINARY_DIR}/bin)
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY
+	${CMAKE_BINARY_DIR}/bin)
+
+set(HELA3D_BUSINESS
+	hela3D.Business)
+
+set(HELA3D_BUSINESS_VERSION
+	1.0.0)
+
+set(HELA3D_DATA
+	hela3D.Data)
+
+set(HELA3D_DATA_VERSION
+	1.0.0)
+
+set(HELA3D_CONSOLE
+	hela3D.Console)
+
+set(HELA3D_CONSOLE_VERSION
+	1.0.0)
+
+add_subdirectory(src/${HELA3D_BUSINESS})
+add_subdirectory(src/${HELA3D_DATA})
+add_subdirectory(src/${HELA3D_CONSOLE})
