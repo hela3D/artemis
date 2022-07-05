@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  build: 
+    image: silkeh/clang:14
+    container_name: hela3D.build
+    working_dir: /srv/hela3D
+
+    command: 
+    - /bin/bash
+    - -c
+    - |
+      cd build 
+      cmake .. 
+      cmake --build .
+
+    volumes:
+      - .:/srv/hela3D
