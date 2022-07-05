@@ -10,7 +10,7 @@ services:
     - /bin/bash
     - -c
     - |
-      cd build 
+      cd .build 
       cmake .. 
       cmake --build .
 
@@ -20,7 +20,7 @@ services:
   run:
     image: silkeh/clang:14
     container_name: hela3D.run
-    working_dir: /srv/hela3D/build
+    working_dir: /srv/hela3D/.build
 
     command:
     - /bin/bash
